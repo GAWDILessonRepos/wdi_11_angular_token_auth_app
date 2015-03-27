@@ -19,7 +19,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- YOUR APPLICATION CONTENT GOES HERE -->
+    <ga-navbar></ga-navbar>
+    <ng-view></ng-view>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -39,6 +40,20 @@
 
     <!-- module declaration -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/routes/Routes.js"></script>
+
+    <script src="scripts/constants/Constants.js"></script>
+    <script src="scripts/factories/AuthFactory.js"></script>
+
+    <script src="scripts/controllers/MainController.js"></script>
+    <script src="scripts/controllers/HomeController.js"></script>
+    <script src="scripts/controllers/LoginController.js"></script>
+    <script src="scripts/controllers/NavbarController.js"></script>
+
+    <script src="scripts/directives/MainDirective.js"></script>
+    <script src="scripts/directives/LoginDirective.js"></script>
+    <script src="scripts/directives/NavbarDirective.js"></script>
+
     <!-- endbuild -->
 
   </body>

@@ -16,5 +16,7 @@ angular.module('AuthApp', [
   'ngResource',
   'ngRoute',
   'ngSanitize',
-  'ngTouch'
+  'ngTouch',
+  'MainController',
+  'MainDirective'
 ]);
