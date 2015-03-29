@@ -1,5 +1,6 @@
 'use strict';
 angular.module('AuthApp').factory('AuthFactory', ['$http', '$window', 'ServerUrl', function($http, $window, ServerUrl){
+
   var login = function(credentials){
     return $http.post(ServerUrl + '/login', credentials).success(function(response){
       _storeSession(response);
